@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+    </head>
+    <body>
+<h1>Coding Course Registration</h1>
+
+<form>
+<label for="fullname">Full name:</label>
+<input type="text" id="fullname" name="fullname" required>
+<br><br>
+
+<label for="email">Email address:</label>
+<input type="email" id="email" name="email" required>
+<br><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required minlength="8">
+<br><br>
+
+<p>What is your coding experience level?</p>
+<input type="radio" id="beginner" name="experience" value="beginner">
+<label for="beginner">Beginner</label>
+<input type="radio" id="intermediate" name="experience" value="intermediate">
+<label for="intermediate">Intermediate</label>
+<input type="radio" id="advanced" name="experience" value="advanced">
+<label for="advanced">Advanced</label>
+<br><br>
+<p>What interests you about coding?</p>
+<input type="checkbox" id="webdev" name="interests" value="web-development">
+<label for="webdev">Web development</label>
+<br>
+<input type="checkbox" id="programming" name="interests" value="programming">
+<label for="programming">Programming</label>
+<br>
+
+<input type="checkbox" id="problemsolving" name="interests" value="problem-solving">
+<label for="problemsolving">Problem solving</label>
+<br><br>
+<label for="course">Choose your preferred course:</label>
+<br>
+
+<select id="course" name="course" required>
+    <option value="">-- Select a course --</option>
+    <option value="html">HTML Fundamentals</option>
+    <option value="web-design">Web Design</option>
+    <option value="programming">Programming Basics</option>
+</select>
+<br><br>
+<label for="motivation">Why do you want to learn coding?</label>
+<br>
+
+<textarea id="motivation" name="motivation" rows="5" cols="40" required></textarea>
+<br><br>
+<button type="submit">Register</button>
+</form>
+    </body>
+</html>
